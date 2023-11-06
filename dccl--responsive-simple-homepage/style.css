@@ -1,0 +1,150 @@
+/* colors
+ #2A4DD0 -blue
+#4CA154-green 
+#111729-violet
+#223344-dark gery
+#909193-light grey
+#F2F9FE-white
+#FFFFFF-full white */
+@import url(nav.css);
+
+body{
+    background-color: #F2F9FE;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+
+}
+
+
+.hero{
+    animation: rotateY 10s linear infinite;
+
+}
+@keyframes rotateY {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+
+
+
+
+
+.main{
+    
+    .text{
+    .t1{
+        font-size: 14px;
+        font-weight: 700;
+    }
+    
+    .t2{
+        font-size: 60px;
+        font-weight: bold;
+    }
+    .t3{
+        color: #909193;
+        font-weight: bold;
+   }
+    .btn{
+    background-color:#2A4DD0 ;
+    padding: 15px 30px;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    margin-right: 20px;
+    }
+    .btn:hover{
+       color: white;
+       background-color: black;
+    }
+    .li{
+        color: #2A4DD0;
+        font-weight: bold;
+    }
+
+    .pag{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+        font-size: 14px;
+        max-width: 400px;
+        font-weight: bolder;
+        color:#909193 ;
+    }
+
+} 
+}
+
+
+/* media quries for responsive layouts */
+
+
+/* for mobile layout */
+
+@media screen and (max-width:768px) {
+    body{
+        margin: 10px 20px;
+    }
+    .hero{
+        width: 80vw;
+        margin-bottom: 100px;
+
+    }   
+    .text{
+        margin-bottom: 60px;
+    } 
+    .t1{
+        font-size: 14px;
+        font-weight: 700;
+        margin: 10px 0px;
+    }
+    
+    .t2{
+        font-size: 60px;
+        font-weight: bold;
+        margin: 10px 0px;
+
+    }
+    .t3{
+        color: #909193;
+        font-weight: bold;
+        margin: 10px 0px;
+
+   }
+
+}
+
+
+/* for desktop layout */
+
+@media screen and (min-width:768px){
+
+    body{
+        margin: 20px 50px;
+    }
+    
+        .main{
+            display: flex;
+            flex-direction: row-reverse;
+            margin: 80px 0px;
+        }
+        .hero{
+            max-width: 600px;
+            max-height: 600px;
+            width: 50vw;
+        }
+
+        
+    }
+    
+    
+   
+
+
+
